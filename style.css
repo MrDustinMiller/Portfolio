@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+    background-color: #0b6ce1;
+    color:#F9FAF8;
+    padding: 8px;
+    font-size: 24px;
+    /* our logo and nav list sit next to each other */
+    display: flex;
+    /* adds equal space on sides of elements */
+    justify-content: space-around;
+    /* alings our content in our header container to be in the center */
+    align-items: center;
+}
+
+.header {
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+}
+
+.header li a {
+    color:#e5e7eb;
+    text-decoration: none;
+}
+
+ul {
+    /* list items are aligned in a row */
+    display: flex;
+    list-style-type: none;
+    
+}
+
+ul li a {
+    padding: 0 20px;
+    text-decoration: none;
+    color:#e5e7eb;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main {
+    /* main content is aligned in a row next to each other */
+    display: flex;
+    gap: 13rem;
+    background-color: #ffffff;
+    min-height: 82vh;
+    align-items: center;
+    /* evenly space out our main content */
+    justify-content: space-around;
+}
+
+main h1 {
+    font-size: 54px;
+    color:#0b6ce1;
+}
+
+main p {
+    color:#000000;
+    font-size: 34px;
+    margin: .3em;
+}
+
+.cv-button {
+    padding: 15px;
+    background-color: #0b6ce1;
+    color:#e5e7eb;
+    outline:none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+}
