@@ -52,6 +52,12 @@ ul li a {
     font-weight: 400;
 }
 
+.icon {
+  visibility: hidden;
+  position: fixed;
+  right: 20px;
+}
+
 main {
     /* main content is aligned in a row next to each other */
     display: flex;
@@ -106,12 +112,13 @@ main p {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 7em 12em;
+    margin: 15em 12em;
     gap: 8rem;
 }
 
 .about-container {
   font-family: 'Montserrat', sans-serif;
+  min-height: 75vh;
 }
 
 .about-container h2 {
@@ -157,8 +164,21 @@ main p {
   justify-content: center;
   font-size: 30px;
   padding-top: 6em;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
   font-family: 'Montserrat', sans-serif;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8em;
+  padding: 2.4em;
+
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .fa-html5 {
@@ -179,6 +199,10 @@ main p {
 
 @media  (max-width: 600px) {
 
+    header li a{
+      visibility: hidden;
+    }
+
     main {
         background-size:55%;
         margin-bottom: -12em;
@@ -190,63 +214,25 @@ main p {
         margin: 2em;
     }
 
+    .about-container img {
+      margin: 0;
+      padding: 0%;
+    }
+
+    .about-text {
+      width: 300px;
+      
+    }
+
     .hero-image {
         display: flex;
         margin-bottom: 30px;
     }
+
 }
 
-@media (max-width: 800px) {
-    
+@media (max-width: 428px) {
+  .icon {
+    visibility: visible;
+  }
 }
-/* 
-.fadeOut {
-    animation: fadeOut ease 8s;
-    -webkit-animation: fadeOut ease 8s;
-    -moz-animation: fadeOut ease 8s;
-    -o-animation: fadeOut ease 8s;
-    -ms-animation: fadeOut ease 8s;
-  }@keyframes fadeOut {
-    0% {
-      opacity:1;
-    }
-    100% {
-      opacity:0;
-    }
-  }
-  
-  @-moz-keyframes fadeOut {
-    0% {
-      opacity:1;
-    }
-    100% {
-      opacity:0;
-    }
-  }
-  
-  @-webkit-keyframes fadeOut {
-    0% {
-      opacity:1;
-    }
-    100% {
-      opacity:0;
-    }
-  }
-  
-  @-o-keyframes fadeOut {
-    0% {
-      opacity:1;
-    }
-    100% {
-      opacity:0;
-    }
-  }
-  
-  @-ms-keyframes fadeOut {
-    0% {
-      opacity:1;
-    }
-    100% {
-      opacity:0;
-  }
-} */
