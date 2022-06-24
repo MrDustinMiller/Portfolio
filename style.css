@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +56,7 @@ main {
     /* main content is aligned in a row next to each other */
     display: flex;
     background-color: #ffffff;
-    min-height: 95vh;
+    min-height: 84vh;
     align-items: center;
     /* evenly space out our main content */
     justify-content: space-around;
@@ -100,25 +102,34 @@ main p {
     border-radius: 50%;
 }
 
-.about-text {
-    width: 550px;
-}
-
 .about-main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 7em 8.2em;
+    margin: 7em 12em;
+    gap: 8rem;
+}
+
+.about-container {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .about-container h2 {
     display: flex;
     justify-content: center;
     font-size: 30px;
-    padding-bottom: .1em;
+    padding-top: 4em;
+    margin-bottom: 3em;
+}
+
+.about-text {
+  display: flex;
+  width: 550px;
+  flex-direction: column;
 }
 
 .about-text h1 {
+
     color:#0b6ce1;
     font-size: 40px;
     text-transform: capitalize;
@@ -141,7 +152,30 @@ main p {
     color: #030404;
 }
 
+.skills-container h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding-top: 6em;
+  margin-bottom: 5em;
+  font-family: 'Montserrat', sans-serif;
+}
 
+.fa-html5 {
+  color: orangered;
+}
+
+.fa-css3-alt {
+  color: blue;
+}
+
+.fa-js-square {
+  color: rgb(222, 222, 22);
+}
+
+.fa-git-square {
+  color:#ef391a;
+}
 
 @media  (max-width: 600px) {
 
