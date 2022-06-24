@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header{
+    z-index: 10;
     height: 100px;
     background-color: #0b6ce1;
     color:#F9FAF8;
@@ -53,6 +58,16 @@ main {
     align-items: center;
     /* evenly space out our main content */
     justify-content: space-around;
+    background-image: url("swirl.png");
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: 74.2%;
+    background-position-y: top; 
+}
+
+.fadeOut {
+    transform: rotateY(0deg);
+    margin-bottom: 5.5em;
 }
 
 main h1 {
@@ -63,11 +78,7 @@ main h1 {
 main p {
     color:#000000;
     font-size: 34px;
-    margin: .3em;
-}
-
-.hero-image{
-    border-radius: 50%;
+    margin-bottom: .3em;
 }
 
 .cv-button {
@@ -82,15 +93,126 @@ main p {
     cursor: pointer;
 }
 
+.about-container img {
+    height: auto;
+    transform: scale(1.2, 1);
+    width: 200px;
+    border-radius: 50%;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.about-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 7em 8.2em;
+}
+
+.about-container h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-bottom: .1em;
+}
+
+.about-text h1 {
+    color:#0b6ce1;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.fa-github {
+    color:#000000;
+    margin-right: .5em;
+}
+
+.fa-linkedin-in {
+    color: #030404;
+}
+
+
+
 @media  (max-width: 600px) {
+
     main {
-        display:flex;
-        flex-direction: column-reverse;
-        justify-content: center;
+        background-size:55%;
+        margin-bottom: -12em;
     }
-    
+
+    .about-main {
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+    }
+
     .hero-image {
         display: flex;
         margin-bottom: 30px;
     }
 }
+
+@media (max-width: 800px) {
+    
+}
+/* 
+.fadeOut {
+    animation: fadeOut ease 8s;
+    -webkit-animation: fadeOut ease 8s;
+    -moz-animation: fadeOut ease 8s;
+    -o-animation: fadeOut ease 8s;
+    -ms-animation: fadeOut ease 8s;
+  }@keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-o-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+  }
+} */
