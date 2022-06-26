@@ -16,7 +16,7 @@ header{
     background-color: #0b6ce1;
     color:#F9FAF8;
     padding: 8px;
-    font-size: 20px;
+    font-size: 24px;
     /* our logo and nav list sit next to each other */
     display: flex;
     /* adds equal space on sides of elements */
@@ -48,7 +48,7 @@ ul li a {
     padding: 0 20px;
     text-decoration: none;
     color:#e5e7eb;
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 400;
 }
 
@@ -173,7 +173,7 @@ main p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 21em;
+  margin: 11em;
   padding: 2.4em;
 
 }
@@ -209,7 +209,25 @@ main p {
   padding: 1.25em;
 }
 
-@media  (max-width: 600px) {
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%
+
+}
+
+@media (min-width: 722px) {
+  .card {
+    border: none;
+  }
+  .card-container{
+    flex-wrap: nowrap;
+  }
+}
+
+@media  (max-width: 720px) {
 
     header li a{
       visibility: hidden;
@@ -218,6 +236,8 @@ main p {
     main {
         background-size:55%;
         margin-bottom: -12em;
+        margin-left: 1.5em;
+        font-size:2px;
     }
 
     .about-main {
@@ -239,6 +259,14 @@ main p {
     .hero-image {
         display: flex;
         margin-bottom: 30px;
+    }
+
+    .card-container {
+      margin: 0;     
+    }
+
+    .card {
+      border: none;
     }
 
 }
