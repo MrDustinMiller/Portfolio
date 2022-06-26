@@ -16,7 +16,7 @@ header{
     background-color: #0b6ce1;
     color:#F9FAF8;
     padding: 8px;
-    font-size: 24px;
+    font-size: 20px;
     /* our logo and nav list sit next to each other */
     display: flex;
     /* adds equal space on sides of elements */
@@ -172,8 +172,8 @@ main p {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 8em;
+  justify-content: space-around;
+  margin: 21em;
   padding: 2.4em;
 
 }
@@ -200,6 +200,13 @@ main p {
 
 .fa-git-square {
   color:#ef391a;
+}
+
+.footer {
+  background-color: #0b6ce1;
+  display: flex;
+  justify-content: center;
+  padding: 1.25em;
 }
 
 @media  (max-width: 600px) {
