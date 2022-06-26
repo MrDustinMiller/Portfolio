@@ -179,6 +179,10 @@ main p {
 .card {
   display: flex;
   flex-wrap: wrap;
+  padding: 3em;
+  background-color: #e5e7eb;
+  border: 3px solid #0b6ce1;
+  border-radius: 1rem;
 }
 
 .fa-html5 {
