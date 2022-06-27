@@ -329,7 +329,7 @@ main p {
   transition: transform 500ms ease;
 }
 
-.project-card-three:hover .project-card-three:focus-within {
+.project-card-three:hover, .project-card-three:focus-within {
   transform: scale(1.05);
 }
 
