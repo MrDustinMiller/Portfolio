@@ -178,13 +178,11 @@ main p {
   justify-content: space-around;
   margin: 11em;
   padding: 2.4em;
-
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
-  /* border: 3px solid #0b6ce1; */
   border-radius: 1rem;
 }
 
@@ -222,7 +220,7 @@ main p {
 }
 
 .card-content{
-  --padding: 1.5rem;
+  --padding: 1rem;
   padding: var(--padding);
   background: linear-gradient(
     hsl(0 0% 0% / 0),
@@ -264,7 +262,7 @@ main p {
   padding: .5em;
 }
 
-.card-button {
+.card-button, .more-button {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
@@ -277,6 +275,11 @@ main p {
 
 .card-button:hover,
 .card-button:focus{
+  background-color: #e5e7eb;
+}
+
+.more-button:hover,
+.more-button:focus{
   background-color: #e5e7eb;
 }
 
@@ -335,17 +338,21 @@ main p {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-around;
   background-color: #0b6ce1;
   text-decoration: none;
   color: #c0c0c0;
   font-family: 'Montserrat', sans-serif;
 }
 
-.footer-title {
+.explore-title, .resource-title {
   font-size: 20px;
+  position: relative;
+  bottom: 10px;
 }
 
-.footer-links{
+.footer-links, .resource-links{
   font-size: 15px;
   display: flex;
   flex-direction: column;
@@ -354,7 +361,7 @@ main p {
   top: 10px;
 }
 
-.link {
+.link, .resource-link {
   text-decoration: none;
   font-size: 15px;
   margin: 0;
@@ -363,7 +370,8 @@ main p {
   transition: all .4s ease;
 }
 
-.link:hover, .link:focus-within{
+.link:hover, .link:focus-within,
+.resource-link:hover, .resource-link:focus-within{
   color:#c0c0c0;
 }
 
