@@ -30,6 +30,7 @@ header{
     position: fixed;
     width: 100%;
     list-style-type: none;
+    z-index: 1;
 }
 
 .header li a {
