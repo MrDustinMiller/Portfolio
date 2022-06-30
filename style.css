@@ -101,7 +101,8 @@ main p {
 }
 
 .cv-button:hover,
-.cv-button:focus {
+.cv-button:focus, .btn:hover,
+.btn:focus {
   background-color: #020202;
 }
 
@@ -116,7 +117,7 @@ main p {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 15em 12em;
+    margin: 4em 12em;
     gap: 8rem;
 }
 
@@ -140,7 +141,6 @@ main p {
 }
 
 .about-text h1 {
-
     color:#0b6ce1;
     font-size: 40px;
     text-transform: capitalize;
@@ -176,7 +176,7 @@ main p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 11em;
+  margin: 7em;
   padding: 2.4em;
 }
 
@@ -337,6 +337,67 @@ main p {
   transform: scale(1.05);
 }
 
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding-top: 6em;
+  margin-bottom: 5em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #999;
+  margin: 10em;
+}
+
+form {
+  margin: 35px;
+}
+
+.input-field {
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  border: 1px solid #777;
+  border-radius: 14px;
+}
+
+.btn{
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 18px;
+  padding: 20px;
+  background-color: #0b6ce1;
+  font-size: 12px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.textarea-field {
+  border-radius: 10px;
+  height: 150px;
+  width: 400px;
+  margin-top: 10px;
+}
+
+
 .footer {
   display: flex;
   justify-content: space-around;
@@ -375,23 +436,6 @@ main p {
   color:#c0c0c0;
 }
 
-.contact-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 10em;
-}
-
-.contact-form h2 {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  padding-top: 6em;
-  margin-bottom: 5em;
-  font-family: 'Montserrat', sans-serif;
-}
 
 @media (hover) {
   .card-content{
@@ -447,6 +491,13 @@ main p {
   }
 }
 
+@media (max-width: 1160px) {
+
+    main {
+      background-size: 50%;
+    }
+  }
+
 @media  (max-width: 720px) {
 
     header li a{
@@ -487,6 +538,17 @@ main p {
 
     .card {
       border: none;
+    }
+
+     form, .input-field, .textarea-field{
+      width: 100%;
+
+    }
+
+    .contact-box{
+      width: 80%;
+      position: relative;
+      right: 27%;
     }
 
 }
