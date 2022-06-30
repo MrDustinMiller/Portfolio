@@ -337,12 +337,12 @@ main p {
   transform: scale(1.05);
 }
 
+
 .contact-form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
 }
 
 .contact-header {
@@ -355,15 +355,12 @@ main p {
 }
 
 .contact-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 500px;
   background-color: #fff;
-  box-shadow: 0 0 20px 0 #999;
+  /* box-shadow:  0 3px 0 #999; */
   margin: 10em;
 }
 
+/* inside form */
 form {
   margin: 35px;
 }
@@ -388,6 +385,7 @@ form {
   border: none;
   cursor: pointer;
   z-index: 1;
+  margin-bottom:1em;
 }
 
 .textarea-field {
@@ -545,11 +543,11 @@ form {
 
     }
 
-    .contact-box{
+    /* .contact-box{
       width: 80%;
       position: relative;
       right: 27%;
-    }
+    } */
 
 }
 
