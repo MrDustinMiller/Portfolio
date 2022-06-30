@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dustin Miller</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -41,7 +41,7 @@
     <section class="about-container" id="about-container">
         <h2>About</h2>
         <div class="about-main" id="about-main">
-            <img src="images/headshot.jpg" class="hero-image">
+            <img src="css/images/headshot.jpg" class="hero-image">
             <div class="about-text">
                 <h1>A little something about me</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -69,7 +69,7 @@
                 <i class="fa-brands fa-js-square fa-4x"></i>
             </div>
             <div class="card">
-                <img src="images/csharp.png" class="c-sharp-img" height="64" width="70">
+                <img src="css/images/csharp.png" class="c-sharp-img" height="64" width="70">
             </div>
             <div class="card">
                 <i class="fa-brands fa-git-square fa-4x"></i>
@@ -120,15 +120,31 @@
             </div>
     </section>
 
+    <!-- <div class="contact-wrapper">
     <form action="" class="contact-form" id="contact-form">
         <h2>Contact</h2>
-        <div class="contant-input">
+        <div class="contact-input">
+            <p>Name</p>
             <input type="text" placeholder="Name" class="name-input">
             <input type="email" placeholder="Email" class="email-input">
         </div>
             <textarea name="" id="" cols="53" rows="10" class="message-input"></textarea>
             <button class="sumbit-input">Send</button>
     </form>
+    </div> -->
+
+    <h2 class="contact-header">Contact</h2>
+    <div class="contact-box">
+        <form class="contact-form" id="contact-form">
+            <input type="text" class="input-field" id="name" placeholder="Your Name"><small class="error"></small>
+            <input type="text" class="input-field" id="email" placeholder="Your Email"><small class="error"></small>
+            <input type="text" class="input-field" id="subject"placeholder="Subject">
+            <textarea type="text" class="input-field textarea-field" id="message" placeholder="Your Message"></textarea>
+            <small class="error"></small>
+            <button type="button" class="btn">Send</button>
+            <p id="success"></p>
+        </form>
+    </div>
 
     <footer class="footer">
         <div>
@@ -143,7 +159,7 @@
 
         <div class="resources">
             <ul class="resource-links">
-                <div class="resource-title">Resources</div>
+                <div class="resource-title">Social</div>
                 <li><a class="resource-link" href="https://github.com/MrDustinMiller">Github</a></li>
                 <li><a class="resource-link" href="https://linkedin.com/in/dustin-miller-76672516a/">Linkedin</a></li>
                 <li><a class="resource-link" href=""></a></li>
@@ -151,6 +167,6 @@
         </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="scripts/buttons.js"></script>
 </body>
 </html>
