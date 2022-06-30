@@ -176,8 +176,8 @@ main p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 7em;
-  padding: 2.4em;
+  margin: 11em;
+  padding: 1.4em;
 }
 
 .card {
@@ -356,8 +356,9 @@ main p {
 
 .contact-box {
   background-color: #fff;
-  /* box-shadow:  0 3px 0 #999; */
-  margin: 10em;
+  /* box-shadow: 2px 2px 20px 2px #999; */
+  margin: 0em 25em;
+
 }
 
 /* inside form */
@@ -543,11 +544,10 @@ form {
 
     }
 
-    /* .contact-box{
-      width: 80%;
-      position: relative;
-      right: 27%;
-    } */
+   .contact-box{
+    margin: 0;
+    width: 80%
+   }
 
 }
 
