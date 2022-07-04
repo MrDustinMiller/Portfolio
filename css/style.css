@@ -53,8 +53,9 @@ ul li a {
     font-weight: 400;
 }
 
-.icon {
+.fa-bars {
   visibility: hidden;
+  color:#000000;
   position: fixed;
   right: 20px;
 }
@@ -350,14 +351,14 @@ main p {
   justify-content: center;
   font-size: 30px;
   padding-top: 6em;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
   font-family: 'Montserrat', sans-serif;
 }
 
 .contact-box {
   background-color: #fff;
   /* box-shadow: 2px 2px 20px 2px #999; */
-  margin: 0em 25em;
+  margin: 0em 20em;
 
 }
 
@@ -404,6 +405,7 @@ form {
   text-decoration: none;
   color: #c0c0c0;
   font-family: 'Montserrat', sans-serif;
+  min-height: 17.3vh;
 }
 
 .explore-title, .resource-title {
@@ -493,7 +495,7 @@ form {
 @media (max-width: 1160px) {
 
     main {
-      background-size: 50%;
+      background-size: 45%;
     }
   }
 
@@ -540,19 +542,29 @@ form {
     }
 
      form, .input-field, .textarea-field{
-      width: 100%;
+      width: 80%;
 
     }
 
    .contact-box{
-    margin: 0;
-    width: 80%
+    margin: 0 15%;
+    width: 80%;
+    
    }
 
 }
 
 @media (max-width: 428px) {
-  .icon {
+  .fa-bars {
     visibility: visible;
+    position: relative;
+    bottom: 310px;
+    left: 160px;
+    cursor: pointer;
   }
+
+  .contact-box{
+    margin: 0 10%; 
+   }
+
 }
