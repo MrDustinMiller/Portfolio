@@ -108,13 +108,12 @@
 
     <h2 class="contact-header">Contact</h2>
     <div class="contact-box" data-aos="fade-down" data-aos-duration="700">
-        <form class="contact-form" id="contact-form" >
-            <input type="text" class="input-field" id="name" placeholder="Your Name"><small class="error"></small>
-            <input type="text" class="input-field" id="email" placeholder="Your Email"><small class="error"></small>
-            <input type="text" class="input-field" id="subject"placeholder="Subject">
-            <textarea type="text" class="input-field textarea-field" id="message" placeholder="Your Message"></textarea>
-            <small class="error"></small>
-            <button type="button" class="btn">Send</button>
+        <form class="contact-form" action="mail.php" method="post" id="contact-form" >
+            <input type="text" class="input-field" name="name" placeholder="Full Name"><small class="error"></small>
+            <input type="text" class="input-field" name="mail" placeholder="Your Email"><small class="error"></small>
+            <input type="text" class="input-field" name="subject" placeholder="Subject">
+            <textarea name="message" class="input-field textarea-field" name="message" placeholder="Message"></textarea>
+            <button type="submit" name="submit" class="btn">Send</button>
             <p id="success"></p>
         </form>
     </div>
