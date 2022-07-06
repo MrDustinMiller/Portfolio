@@ -53,13 +53,6 @@ ul li a {
     font-weight: 400;
 }
 
-.fa-bars {
-  visibility: hidden;
-  color:#000000;
-  position: fixed;
-  right: 20px;
-}
-
 main {
     padding-right: 14em;;
     /* main content is aligned in a row next to each other */
@@ -87,6 +80,13 @@ main p {
     color:#000000;
     font-size: 34px;
     margin-bottom: .3em;
+}
+
+.fa-bars {
+  visibility: hidden;
+  color:#000000;
+  position: fixed;
+  right: 20px;
 }
 
 .cv-button {
@@ -362,21 +362,6 @@ main p {
 
 }
 
-.contact-box h1 {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  color:#000000;
-  margin-top: 8em;
-}
-
-.contact-box p {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color:#000000;
-}
-
 /* inside form */
 form {
   margin: 35px;
@@ -572,9 +557,6 @@ form {
 @media (max-width: 428px) {
   .fa-bars {
     visibility: visible;
-    position: relative;
-    bottom: 310px;
-    left: 160px;
     cursor: pointer;
   }
 
