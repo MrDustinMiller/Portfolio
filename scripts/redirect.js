@@ -1,10 +1,8 @@
-var form = document.getElementById("contact-form");
-const email = document.getElementById('name').value;
-let pattern = '^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$';
+var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
       event.preventDefault();
-      var status = document.getElementById("status");
+      var status = document.getElementById("my-form-status");
       var data = new FormData(event.target);
       fetch(event.target.action, {
         method: form.method,
@@ -13,7 +11,7 @@ let pattern = '^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-
             'Accept': 'application/json'
         }
       }).then(response => {
-        if (response.ok && pattern.text(email)) {
+        if (response.ok) {
           status.innerHTML = "Thanks for your submission!";
           form.reset()
         } else {
@@ -29,5 +27,4 @@ let pattern = '^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-
         status.innerHTML = "Oops! There was a problem submitting your form"
       });
     }
-
     form.addEventListener("submit", handleSubmit)
