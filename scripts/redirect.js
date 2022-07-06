@@ -1,4 +1,6 @@
 var form = document.getElementById("contact-form");
+const email = document.getElementById('name').value;
+let pattern = '^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$';
     
     async function handleSubmit(event) {
       event.preventDefault();
@@ -11,7 +13,7 @@ var form = document.getElementById("contact-form");
             'Accept': 'application/json'
         }
       }).then(response => {
-        if (response.ok) {
+        if (response.ok && pattern.text(email)) {
           status.innerHTML = "Thanks for your submission!";
           form.reset()
         } else {
