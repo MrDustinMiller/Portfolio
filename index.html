@@ -109,10 +109,10 @@
     <h2 class="contact-header">Contact</h2>
     <div class="contact-box"  data-aos="fade-down" data-aos-duration="700">
         <form class="contact-form" action="https://formspree.io/f/mayvgejk" method="POST" id="contact-form" >
-            <input type="text" class="input-field" id="name" placeholder="Full Name" required ><small class="error"></small>
-            <input type="text" class="input-field" id="mail" placeholder="Your Email" required><small class="error"></small>
-            <input type="text" class="input-field" id="subject" placeholder="Subject" required>
-            <textarea name="message" class="input-field textarea-field" id="message" placeholder="Message"></textarea>
+            <input type="text" class="input-field" name="name" placeholder="Full Name" required ><small class="error"></small>
+            <input type="text" class="input-field" name="mail" placeholder="Your Email" required><small class="error"></small>
+            <input type="text" class="input-field" name="subject" placeholder="Subject" required>
+            <textarea name="message" class="input-field textarea-field" name="message" placeholder="Message"></textarea>
             <button onclick="validation()" type="submit" name="submit" class="btn">Send</button>
             <div id="status"></div>
             <div id="error"></div>
