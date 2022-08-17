@@ -1,8 +1,9 @@
-let nav = document.getElementById("myLinks");
+let nav = document.getElementById("mobile");
 function downloadCV() {
   alert("downloading cover letter");
 }
 
-nav.addEventListener("click", (e) => {
-  x.style.visibility = "hidden";
-});
+function go() {
+  var x = document.getElementById("myLinks");
+  x.style.display = "none";
+}
