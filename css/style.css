@@ -64,7 +64,7 @@ main {
     align-items: center;
     /* evenly space out our main content */
     justify-content: space-around;
-    background-image: url(/Portfolio/images/swirl.png);
+    background-image: url(/images/swirl.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment:scroll;
@@ -291,7 +291,7 @@ main p {
   background-color:#0b6ce1;
   color:#ffffff;
   font-family: 'Montserrat', sans-serif;
-  background-image: url(/Portfolio/images/media-player.png);
+  background-image: url(/images/media-player.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 0 0;
@@ -309,7 +309,7 @@ main p {
   background-color:#0b6ce1;
   color:#ffffff;;
   font-family: 'Montserrat', sans-serif;
-  background-image: url(/Portfolio/images/weather.jpg);
+  background-image: url(/images/weather.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 0 0;
@@ -327,7 +327,7 @@ main p {
   background-color:#0b6ce1;
   color:#ffffff;
   font-family: 'Montserrat', sans-serif;
-  background-image: url(/Portfolio/images/map.png);
+  background-image: url(/images/map.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 0 0;
