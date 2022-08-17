@@ -53,6 +53,8 @@ ul li a {
     font-weight: 400;
 }
 
+
+
 main {
     padding-right: 14em;;
     /* main content is aligned in a row next to each other */
@@ -62,7 +64,7 @@ main {
     align-items: center;
     /* evenly space out our main content */
     justify-content: space-around;
-    background-image: url(/images/swirl.png);
+    background-image: url(/Portfolio/images/swirl.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment:scroll;
@@ -87,6 +89,7 @@ main p {
   color:#000000;
   position: fixed;
   right: 20px;
+  top: 20px;
 }
 
 .cv-button {
@@ -288,7 +291,7 @@ main p {
   background-color:#0b6ce1;
   color:#ffffff;
   font-family: 'Montserrat', sans-serif;
-  background-image: url(/images/media-player.png);
+  background-image: url(/Portfolio/images/media-player.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 0 0;
@@ -306,7 +309,7 @@ main p {
   background-color:#0b6ce1;
   color:#ffffff;;
   font-family: 'Montserrat', sans-serif;
-  background-image: url(/images/weather.jpg);
+  background-image: url(/Portfolio/images/weather.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 0 0;
@@ -324,7 +327,7 @@ main p {
   background-color:#0b6ce1;
   color:#ffffff;
   font-family: 'Montserrat', sans-serif;
-  background-image: url(/images/map.png);
+  background-image: url(/Portfolio/images/map.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 0 0;
@@ -437,7 +440,6 @@ form {
   color:#c0c0c0;
 }
 
-
 @media (hover) {
   .card-content{
     transform: translateY(70%);
@@ -500,10 +502,9 @@ form {
   }
 
 @media  (max-width: 720px) {
-
-    header li a{
-      visibility: hidden;
-    }
+  header li a {
+    visibility: hidden;
+  }
 
     main {
         background-size:55%;
@@ -554,14 +555,52 @@ form {
 
 }
 
-@media (max-width: 428px) {
-  .fa-bars {
-    visibility: visible;
-    cursor: pointer;
-  }
-
+@media (max-width: 427px) {
   .contact-box{
     margin: 0 10%; 
    }
 
+   .nav-list{
+    visibility: hidden;
+  }
+  .fa-bars {
+    visibility: visible;
+  }
 }
+
+.topnav {
+  background-color: #333;
+  position: relative;
+  right: 100%;
+  height:37em;
+  top: 390px;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 20px 19px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  visibility: visible;
+}
+
+.topnav a.icon {
+  background: #0b6ce1;
+  display: block;
+  position: absolute;
+  left: 105px;
+  bottom: 60em;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
