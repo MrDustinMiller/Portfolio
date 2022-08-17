@@ -1,6 +1,8 @@
-const hamburger = document.querySelector(".fa-bars");
-const navMenu = document.querySelector(".nav-list");
-
-hamburger.addEventListener('click', () => {
-   alert('under construction')
-})
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
