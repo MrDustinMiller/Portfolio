@@ -266,6 +266,10 @@ main p {
   transform: scaleX(1);
 }
 
+.project-card-five:hover .card-title::after {
+  transform: scaleX(1);
+}
+
 .card-body {
   padding: .5em;
 }
@@ -365,6 +369,25 @@ main p {
 
 .project-card-four:hover,
 .project-card-four:focus-within {
+  transform: scale(1.05);
+}
+
+.project-card-five {
+  background-color: #e10ba8b2;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(/images/calc.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 11.5rem 0 0;
+  max-width: 28ch;
+  border-radius: .5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.project-card-five:hover,
+.project-card-five:focus-within {
   transform: scale(1.05);
 }
 
@@ -497,6 +520,12 @@ form {
     transition-delay: 500ms;
   }
 
+  .project-card-five:hover .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+
+
   .card-content>*:not(.card-title) {
     opacity: 0;
   }
@@ -521,6 +550,12 @@ form {
 
 
   .project-card-four:hover .card-content>* {
+    opacity: 1;
+    transition: opacity 500ms linear;
+    transition-delay: 1000ms;
+  }
+
+  .project-card-five:hover .card-content>* {
     opacity: 1;
     transition: opacity 500ms linear;
     transition-delay: 1000ms;
