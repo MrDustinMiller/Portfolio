@@ -362,7 +362,7 @@ main p {
   font-family: 'Montserrat', sans-serif;
   background-image: url(/images/eas.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding: 4.3rem 0 0;
   max-width: 300px;
   max-height: 300px;
