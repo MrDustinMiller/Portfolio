@@ -250,9 +250,24 @@ main p {
   transition: transform 500ms ease;
 }
 
-.project-cards:hover>* .card-title::after {
+.project-card-one:hover .card-title::after {
   transform: scaleX(1);
+}
 
+.project-card-two:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+.project-card-three:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+.project-card-four:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+.project-card-five:hover .card-title::after {
+  transform: scaleX(1);
 }
 
 .card-body {
@@ -281,44 +296,104 @@ main p {
   background-color: #e5e7eb;
 }
 
-.project-cards>* {
+.project-card-one {
+  background-color: #0b6ce1;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
+  background-image: url(/images/media-player.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10rem 0 0;
-  max-width: 28ch;
+  padding: 3rem 0 0;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: .5rem;
   overflow: hidden;
   transition: transform 500ms ease;
 }
 
-.project-card-one {
-  background-image: url(/images/media-player.png);
-}
-
-.project-cards>*:hover,
+.project-card-one:hover,
 .project-card-one:focus-within {
   transform: scale(1.05);
 }
 
 .project-card-two {
+  background-color: #0b6ce1;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
   background-image: url(/images/weather.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 0 0;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: .5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.project-card-two:hover,
+.project-card-two:focus-within {
+  transform: scale(1.05);
 }
 
 .project-card-three {
+  background-color: #0b6ce1;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
   background-image: url(/images/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 0 0;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: .5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
 
+.project-card-three:hover,
+.project-card-three:focus-within {
+  transform: scale(1.05);
 }
 
 .project-card-four {
+  background-color: #0b6ce1;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
   background-image: url(/images/eas.jpg);
-  padding: 11.5rem 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 4.3rem 0 0;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: .5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
 
+.project-card-four:hover,
+.project-card-four:focus-within {
+  transform: scale(1.05);
 }
 
 .project-card-five {
+  background-color: #0b6ce1;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
   background-image: url(/images/calc.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 0 0;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: .5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.project-card-five:hover,
+.project-card-five:focus-within {
+  transform: scale(1.05);
 }
 
 .contact-form {
@@ -339,6 +414,7 @@ main p {
 
 .contact-box {
   background-color: #fff;
+  /* box-shadow: 2px 2px 20px 2px #999; */
   margin: 0em 20em;
 
 }
