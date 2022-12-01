@@ -12,7 +12,7 @@
 
 ## Future Updates
 
-- [] Rebuild Portfolio with React
+- Rebuild Portfolio with React
 
 ## 🤝 Support
 
