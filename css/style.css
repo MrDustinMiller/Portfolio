@@ -303,8 +303,9 @@ main p {
   background-image: url(/images/media-player.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10rem 0 0;
-  max-width: 28ch;
+  padding: 3rem 0 0;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: .5rem;
   overflow: hidden;
   transition: transform 500ms ease;
@@ -322,8 +323,9 @@ main p {
   background-image: url(/images/weather.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10rem 0 0;
-  max-width: 28ch;
+  padding: 3rem 0 0;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: .5rem;
   overflow: hidden;
   transition: transform 500ms ease;
@@ -341,8 +343,9 @@ main p {
   background-image: url(/images/map.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10rem 0 0;
-  max-width: 28ch;
+  padding: 3rem 0 0;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: .5rem;
   overflow: hidden;
   transition: transform 500ms ease;
@@ -354,14 +357,15 @@ main p {
 }
 
 .project-card-four {
-  background-color: #e10ba8b2;
+  background-color: #0b6ce1;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   background-image: url(/images/eas.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  padding: 11.5rem 0 0;
-  max-width: 28ch;
+  background-size: cover;
+  padding: 4.3rem 0 0;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: .5rem;
   overflow: hidden;
   transition: transform 500ms ease;
@@ -373,14 +377,15 @@ main p {
 }
 
 .project-card-five {
-  background-color: #e10ba8b2;
+  background-color: #0b6ce1;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   background-image: url(/images/calc.webp);
   background-repeat: no-repeat;
-  background-size: contain;
-  padding: 10.5rem 0 0;
-  max-width: 28ch;
+  background-size: cover;
+  padding: 3rem 0 0;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: .5rem;
   overflow: hidden;
   transition: transform 500ms ease;
