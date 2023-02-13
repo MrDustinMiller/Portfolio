@@ -234,6 +234,7 @@ main p {
 }
 
 .card-title {
+  color: rgb(255, 255, 255);
   position: relative;
   width: max-content;
 }
@@ -360,7 +361,7 @@ main p {
   background-color: #0b6ce1;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  background-image: url(/images/eas.jpg);
+  background-image: url(/images/test6.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4.3rem 0 0;
